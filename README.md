@@ -1,4 +1,6 @@
-# 🎀✨ Mon portfolio ✨🎀
+# 🎀✨ Mon portfolio ✨🎀   
+
+## en cours de création....
 
 👋 Salut ! Bienvenue dans mon petit coin du monde où créativité et technologie se rencontrent. Voici mon portfolio, où je partage mes projets et mes passions. J'espère que vous l'apprécierez autant que j'ai aimé les créer ! 💖
 
