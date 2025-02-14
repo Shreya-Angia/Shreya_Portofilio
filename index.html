@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Shreya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>  
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="Pages/Medias/image-removebg-preview.png" alt="Logo">
+        </div>
+        <nav class="menu-navigation">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#divers">Divers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <button id="darkModeToggle" class="toggle-btn">🌙</button>
+            <button id="languageToggle" class="toggle-btn">🇫🇷</button>
+        </div>
+    </header>
+
+    <!-- ACCUEIL -->
+    <section id="accueil">
+        <h2 class="section-title">Bienvenue sur mon Portfolio</h2>
+        <div class="content">
+            <p>Je suis Shreya ANGIA, étudiante en informatique passionnée par la technologie.</p>
+            <div class="profile">
+                <img src="Pages/Medias/AShreya.png" alt="Photo de profil">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation">
+        <h2 class="section-title">Formation</h2>
+        <div class="content">
+            <p>Actuellement étudiante à l'IUT de Clermont-Ferrand.</p>
+        </div>
+    </section>
+
+    <!-- RÉSEAUX SOCIAUX -->
+    <div class="social-links">
+        <a href="https://instagram.com/"><img src="Pages/Medias/insta.png" alt="Instagram"></a>
+        <a href="https://x.com/"><img src="Pages/Medias/X.avif" alt="Twitter"></a>
+        <a href="https://facebook.com"><img src="Pages/Medias/facebook.png" alt="Facebook"></a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2024 Angia Shreya. Tous droits réservés.
+    </footer>
+
+    <script>
+        // MODE SOMBRE
+        document.getElementById("darkModeToggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+            this.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+        });
+
+        // TRADUCTION
+        document.getElementById("languageToggle").addEventListener("click", function() {
+            this.textContent = this.textContent === "🇫🇷" ? "🇬🇧" : "🇫🇷";
+        });
+    </script>
+</body>
+</html>
+    
