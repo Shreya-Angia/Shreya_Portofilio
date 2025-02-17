@@ -130,6 +130,75 @@ section {
     margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* ---- ACCUEIL ---- */
+#accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+    color: #6a0dad;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background: #6a0dad;
+    color: white;
+}
+
+/* ---- PHOTO DE PROFIL ---- */
+.profile {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #6a0dad;
+    object-fit: cover;
+}
+
 
 /* ---- RÉSEAUX SOCIAUX ---- */
 .social-links {
