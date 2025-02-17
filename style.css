@@ -1,0 +1,159 @@
+ /* ---- STYLE GLOBAL ---- */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f0ff;
+    color: #3a2e58;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ---- MODE SOMBRE ---- */
+body.dark-mode {
+    background-color: #2a1b3d;
+    color: #f7f0ff;
+}
+
+/* Texte toujours bien visible */
+.content p {
+    color: #3a2e58;
+    transition: color 0.3s;
+}
+
+body.dark-mode .content p {
+    color: #dcd3f5;
+}
+
+/* ---- HEADER ---- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #6a0dad;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.menu-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu-navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 8px 12px;
+}
+
+.menu-navigation ul li a:hover {
+    background-color: #dab6fc;
+    border-radius: 5px;
+}
+
+/* ---- BOUTONS MODE SOMBRE & LANGUE ---- */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* ---- SECTIONS ---- */
+section {
+    padding: 100px 50px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 800px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+}
+
+/* ---- PHOTO DE PROFIL ---- */
+.profile img {
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- RÉSEAUX SOCIAUX ---- */
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-links img {
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 50px;
+}
