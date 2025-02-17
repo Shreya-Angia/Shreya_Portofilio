@@ -1,6 +1,6 @@
 # 🎀✨ Mon portfolio ✨🎀   
 
-## en cours de création....
+## en cours de création....    ![Merci d'avoir Visité](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
 
 👋 Salut ! Bienvenue dans mon petit coin du monde où créativité et technologie se rencontrent. Voici mon portfolio, où je partage mes projets et mes passions. J'espère que vous l'apprécierez autant que j'ai aimé les créer ! 💖
 
@@ -20,4 +20,4 @@ Hello ! Je suis Shreya ANGIA, étudiante en première Année de BUT informatique
 
 Merci de visiter mon portfolio ! Si vous avez des questions ou si vous souhaitez collaborer, n'hésitez pas à me contacter. 🌷
 
-![Merci d'avoir Visité](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+
