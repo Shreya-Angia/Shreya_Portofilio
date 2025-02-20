@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Shreya</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+
 </head>  
 <body>
     <!-- HEADER -->
@@ -15,18 +17,18 @@
         </div>
         <nav class="menu-navigation">
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#experience">Expériences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#divers">Divers</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" class="lang" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#qualites" class="lang" data-fr="Qualités" data-en="Qualities">Qualités</a></li>
+                <li><a href="#competences" class="lang" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+                <li><a href="#experience" class="lang" data-fr="Expériences" data-en="Experience">Expériences</a></li>
+                <li><a href="#projets" class="lang" data-fr="Projets" data-en="Projects">Projets</a></li>
+                <li><a href="#divers" class="lang" data-fr="Divers" data-en="Others">Divers</a></li>
+                <li><a href="#contact" class="lang" data-fr="Contact" data-en="Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="actions">
             <button id="darkModeToggle" class="toggle-btn">🌙</button>
-            <button id="languageToggle" class="toggle-btn">🇫🇷</button>
+            <button id="languageToggle" class="toggle-btn">🇬🇧</button>
         </div>
     </header>
 
@@ -34,40 +36,80 @@
     <section id="accueil">
         <div class="container">
             <div class="text">
-                <h1>Je m'appelle <span class="bold">Shreya ANGIA</span></h1>
-                <p class="description">
+                <h1 class="lang" data-fr="Je m'appelle <span class='bold'>Shreya ANGIA</span>" data-en="My name is <span class='bold'>Shreya ANGIA</span>">
+                    Je m'appelle <span class="bold">Shreya ANGIA</span>
+                </h1>
+                <p class="description lang" data-fr="Je suis en première année de BUT informatique à l’Université Clermont Auvergne. Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données." 
+                   data-en="I am a first-year student in Computer Science at the University of Clermont Auvergne. Organized, persistent, and curious, I am looking for an internship in database management.">
                     Je suis en première année de BUT informatique à l’Université Clermont Auvergne.
                     Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données.
                 </p>
-                <a href="cv.pdf" download class="cv-button">📄 CV à télécharger</a>
+                <a href="cv.pdf" download class="cv-button lang" data-fr="📄 CV à télécharger" data-en="📄 Download CV">📄 CV à télécharger</a>
             </div>
             <div class="profile">
                 <img src="medias/Shreya.png" alt="Photo de profil">
             </div>
         </div>
     </section>
-    
 
-    <!-- FORMATION -->
-    <section id="formation">
-        <h2 class="section-title">Formation</h2>
+    
+  <!-- QUALITÉS -->
+<section id="qualites">
+    <h2 class="section-title">Mes Qualités</h2>
+    <div class="qualites-container">
+        <div class="post-it" onclick="flipCard(this)">
+            <div class="front">Organisée</div>
+            <img src="medias/organiser.png" alt="Organisée">
+            <div class="back">J'aime structurer mon travail pour être efficace et ne rien oublier.</div>
+        </div>
+        <div class="post-it" onclick="flipCard(this)">
+            <div class="front">Persévérante</div>
+            <div class="back">Je ne baisse pas les bras face aux défis, j’aime aller au bout des choses.</div>
+        </div>
+        <div class="post-it" onclick="flipCard(this)">
+            <div class="front">Curieuse</div>
+            <div class="back">J’adore apprendre et découvrir de nouvelles technologies et concepts.</div>
+        </div>
+    </div>
+</section> 
+
+
+    <!-- COMPÉTENCES -->
+    <section id="competences">
+        <h2 class="section-title lang" data-fr="Compétences" data-en="Skills">Compétences</h2>
         <div class="content">
-            <p>Actuellement étudiante à l'IUT de Clermont-Ferrand.</p>
+            <ul>
+                <li class="lang" data-fr="Programmation en Python et Java" data-en="Programming in Python and Java">Programmation en Python et Java</li>
+                <li class="lang" data-fr="Développement Web (HTML, CSS, JS)" data-en="Web Development (HTML, CSS, JS)">Développement Web (HTML, CSS, JS)</li>
+                <li class="lang" data-fr="Gestion de bases de données SQL" data-en="Database management with SQL">Gestion de bases de données SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title lang" data-fr="Contact" data-en="Contact">Contact</h2>
+        <div class="content">
+            <p>Email: <a href="mailto:shreya@example.com">shreya@example.com</a></p>
+            <p class="lang" data-fr="Téléphone: +33 6 XX XX XX XX" data-en="Phone: +33 6 XX XX XX XX">Téléphone: +33 6 XX XX XX XX</p>
         </div>
     </section>
 
     <!-- RÉSEAUX SOCIAUX -->
     <div class="social-links">
         <a href="https://instagram.com/"><img src="medias/insta.png" alt="Instagram"></a>
-        <a href="https://gitHub.com/"><img src="medias/gitHub.png" alt="gitHub"></a>
-        <a href="https://facebook.com"><img src="medias/linkdin.png" alt="Facebook"></a>
+        <a href="https://gitHub.com/"><img src="medias/gitHub.png" alt="GitHub"></a>
+        <a href="https://linkedin.com"><img src="medias/linkedin.png" alt="LinkedIn"></a>
     </div> 
 
     <!-- FOOTER -->
     <footer>
-        © 2024 Angia Shreya. Tous droits réservés.
+        <p class="lang" data-fr="© 2024 Angia Shreya. Tous droits réservés." data-en="© 2024 Angia Shreya. All rights reserved.">
+            © 2024 Angia Shreya. Tous droits réservés.
+        </p>
     </footer>
 
+    <!-- SCRIPT -->
     <script>
         // MODE SOMBRE
         document.getElementById("darkModeToggle").addEventListener("click", function() {
@@ -77,9 +119,15 @@
 
         // TRADUCTION
         document.getElementById("languageToggle").addEventListener("click", function() {
-            this.textContent = this.textContent === "🇫🇷" ? "🇬🇧" : "🇫🇷";
+            const isEnglish = this.textContent === "🇬🇧";
+            this.textContent = isEnglish ? "🇫🇷" : "🇬🇧";
+
+            document.querySelectorAll(".lang").forEach(el => {
+                el.innerHTML = isEnglish ? el.getAttribute("data-en") : el.getAttribute("data-fr");
+            });
         });
     </script>
+
+    
 </body>
 </html>
-    
