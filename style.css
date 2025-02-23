@@ -276,9 +276,9 @@ footer {
 
 
 .post-it {
-    width: 300px;
-    height: 300px;
-    background: #ffea75;
+    width: 250px;
+    height: 250px;
+    background: #f6e89a;
     color: #3a2e58;
     font-weight: bold;
     font-size: 1.2rem;
@@ -298,6 +298,16 @@ footer {
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
 }
 
+/*Mettre l'image en desous du texte*/
+
+.post-it img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
 .post-it .front,
 .post-it .back {
     position: absolute;
@@ -312,10 +322,12 @@ footer {
 }
 
 .post-it .back {
-    background: #ffd54f;
+    background: #ffdb64;
     color: #3a2e58;
     transform: rotateY(180deg);
 }
+
+
 
 /* Effet de retournement */
 .post-it.flipped {
