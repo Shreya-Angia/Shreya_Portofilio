@@ -7,3 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const languages = document.querySelectorAll(".language");
+
+    languages.forEach(lang => {
+        lang.addEventListener("click", () => {
+            lang.classList.toggle("flipped");
+        });
+    });
+});
+
+
+
