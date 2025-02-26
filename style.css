@@ -298,7 +298,6 @@ footer {
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
 }
 
-/*Mettre l'image en desous du texte*/
 
 .post-it img {
     position: absolute;
@@ -346,3 +345,122 @@ footer {
     100% { transform: rotate(0); }
 }
 
+/* -----Competences----- */
+
+
+
+/* Conteneur de la carte */
+.map-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Image de la carte */
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Langage positionné sur la carte */
+.language {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+/* Lignes reliant les points d'origine */
+.language .linedown {
+    width: 2px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.language .lineup {
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.language .lineleft {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    transform: translateX(50%); ;
+}
+
+.language .linedownleft {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, 50%) rotate(35deg);
+} 
+
+/* ligne qui va a droite, je veux que la ligne va en bas, légèrement a droite */
+
+/* Carte contenant le logo et la face arrière */
+.card {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Quand on clique, on retourne la carte */
+.language.flipped .card {
+    transform: rotateY(180deg);
+}
+
+/* Faces */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Face avant (logo) */
+.front {
+    background: white;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.front img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+/* Face arrière (pourcentage) */
+.back {
+    background: #6a0dad;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
