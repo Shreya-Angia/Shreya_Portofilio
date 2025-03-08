@@ -205,13 +205,37 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-        <h2 class="section-title lang" data-fr="Contact" data-en="Contact">Contact</h2>
-        <div class="content">
-            <p>Email: <a href="mailto:shreya@example.com">shreya@example.com</a></p>
-            <p class="lang" data-fr="Téléphone: +33 6 XX XX XX XX" data-en="Phone: +33 6 XX XX XX XX">Téléphone: +33 6 XX XX XX XX</p>
+    <section id="contact-section">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="section-title lang" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name" class="lang" data-fr="Nom" data-en="Name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+    
+                    <label for="email" class="lang" data-fr="Email" data-en="Email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Votre email">
+    
+                    <label for="message" class="lang" data-fr="Message" data-en="Message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+    
+                    <button type="submit" class="lang" data-fr="Envoyer" data-en="Send">Envoyer</button>
+                </form>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <p class="lang" data-fr="En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant." 
+                   data-en="Due to server limitations, this option is currently not available. Please contact through the following means.">
+                   En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant. Veuillez me contacter par les moyens 
+                   ci-dessous. Merci de votre compréhension.
+                </p>
+                <p>Email: <a href="mailto:shreya@example.com" style="color: #6a0dad;">shreya@example.com</a></p>
+                <p class="lang" data-fr="Téléphone: +33 6 XX XX XX XX" data-en="Phone: +33 6 XX XX XX XX">Téléphone: +33 6 XX XX XX XX</p>
+            </div>
         </div>
     </section>
+    
+    
+    
 
     <!-- RÉSEAUX SOCIAUX -->
     <div class="social-links">
