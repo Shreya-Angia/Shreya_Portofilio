@@ -465,15 +465,6 @@ footer {
 
 /*CONTACT*/
 
-/* Design minimaliste, élégant et épuré */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f6fc;
-    color: #5a4b81;
-    margin: 0;
-    padding: 0;
-}
-
 #contact-section {
     padding: 50px 10%;
     display: flex;
