@@ -574,3 +574,114 @@ button:hover {
     text-decoration: underline;
 }
 
+/*Experiences*/
+
+#experience-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a0dad;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #6a0dad;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #c7b8e2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-date {
+    background: #6a0dad;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(106, 13, 173, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px rgba(106, 13, 173, 0.2);
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    color: #6a0dad;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #5a4b81;
+    opacity: 0.8;
+}
+
+/* 🌿 Responsive pour mobile */
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    .timeline-date {
+        margin-bottom: 5px;
+    }
+}
+
