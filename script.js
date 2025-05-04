@@ -1,3 +1,5 @@
+/*For qualities*/
+
 document.addEventListener("DOMContentLoaded", function() {
     const postIts = document.querySelectorAll(".post-it");
 
@@ -8,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+/*For the skills*/
 document.addEventListener("DOMContentLoaded", () => {
     const languages = document.querySelectorAll(".language");
 
@@ -20,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/*To get a smooth transiion between the sections*/
 document.addEventListener("DOMContentLoaded", function () {
     const menuLinks = document.querySelectorAll(".menu-navigation a");
 
