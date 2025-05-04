@@ -20,4 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".menu-navigation a");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+            
+            const targetId = this.getAttribute("href"); // Récupère l'ID de la section
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: "smooth", // Défilement fluide
+                    block: "start"
+                });
+            }
+        });
+    });
+});
+
+
 

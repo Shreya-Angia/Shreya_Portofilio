@@ -1,0 +1,47 @@
+/* 🌟 Page Projet */
+#ProjectDetail {
+    padding: 60px 10%;
+    text-align: left;
+    background-color: #f8f6fc;
+}
+
+
+
+/* 🔙 Bouton Retour */
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6a0dad;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background: #8354c5;
+}
+
+/* 📦 Boîte avec contours */
+.rectangle-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(106, 13, 173, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .rectangle-box {
+        width: 90%;
+    }
+}

@@ -42,16 +42,32 @@
                 <p class="description lang" data-fr="Je suis en première année de BUT informatique à l’Université Clermont Auvergne. Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données." 
                    data-en="I am a first-year student in Computer Science at the University of Clermont Auvergne. Organized, persistent, and curious, I am looking for an internship in database management.">
                     Je suis en première année de BUT informatique à l’Université Clermont Auvergne.
-                    Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données.
+                    Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données pour printemps 2026.
                 </p>
-                <a href="https://cv-shreya.my.canva.site/" download class="cv-button lang" data-fr="📄 CV à télécharger" data-en="📄 Download CV">📄 CV à télécharger</a>
-                <p>Site en cours de développement...</p>
+                <a href="https://cv-shreya.my.canva.site/" download class="cv-button lang" data-fr="📄 CV à télécharger" data-en="📄 Download CV">📄 CV à télécharger</a> 
+                
             </div>
             <div class="profile">
                 <img src="medias/Shreya.png" alt="Photo de profil">
             </div>
         </div>
     </section>
+    <div id="dev-status">
+        <h5 class="dev-title">🚧 Site en cours de développement 🚧</h1>
+    </div> 
+    <style>
+        #dev-status {
+            text-align: center;
+            background-color: #e6b7ff;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style> 
 
     
   <!-- QUALITÉS -->
@@ -72,7 +88,7 @@
             <div class="front">Adaptabilité</div>
             <img src="medias/adaptation.png" alt="Organisée">
             <div class="back">J’adore apprendre et découvrir de nouvelles technologies et concepts.</div>
-        </div>
+        </div style= >
         <div class="post-it" onclick="flipCard(this)">
             <div class="front">Créativité</div>
             <img src="medias/innovation.png" alt="Organisée">
@@ -81,129 +97,156 @@
     </div>
 </section> 
 
-
-    <!-- COMPÉTENCES -->
+<!-- COMPÉTENCES -->
 <section id="competences">
     <h2 class="section-title">Mes Compétences</h2>
-        <div class="map-container">
-            <img src="medias/world.png" alt="Carte du monde" class="map">
-            
-            <!-- html -->
-            <div class="language" data-lang="JavaScript" style="top: 42%; left: 45%;">
-                <div class="lineup"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/html.png" alt="JavaScript">
-                    </div>
-                    <div class="back">85%</div>
+    <div class="skills-container">
+        <!-- HTML -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/html.png" alt="HTML">
                 </div>
+                <div class="card-back">85%</div>
             </div>
-    
-            <!-- Python -->
-            <div class="language" data-lang="Python" style="top: 7%; left: 44%;">
-                <div class="linedown"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/python.png" alt="Python">
-                    </div>
-                    <div class="back">90%</div>
+        </div>
+        <!-- Python -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/python.png" alt="Python">
                 </div>
+                <div class="card-back">35%</div>
             </div>
-    
-            <!-- sql -->
-            <div class="language" data-lang="sql" style="top: 49%; left: 12%;">
-                <div class="lineup"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/sql.png" alt="Java">
-                    </div>
-                    <div class="back">75%</div>
+        </div>
+        <!-- SQL -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/sql.png" alt="SQL">
                 </div>
+                <div class="card-back">75%</div>
             </div>
+        </div>
+        <!-- C -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/C.png" alt="C">
+                </div>
+                <div class="card-back">75%</div>
+            </div>
+        </div>
+        <!-- C++ -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/C++.png" alt="C++">
+                </div>
+                <div class="card-back">75%</div>
+            </div>
+        </div>
+        <!-- CSS -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/css.png" alt="CSS">
+                </div>
+                <div class="card-back">75%</div>
+            </div>
+        </div>
+        <!-- PHP -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/php.png" alt="PHP">
+                </div>
+                <div class="card-back">75%</div>
+            </div>
+        </div>
+        <!-- Shell -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/shell.png" alt="Shell">
+                </div>
+                <div class="card-back">70%</div>
+            </div>
+        </div>
+        <!-- Arduino -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/arduino.png" alt="Arduino">
+                </div>
+                <div class="card-back">65%</div>
+            </div>
+        </div>
+        <!-- Réseaux -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/network.png" alt="Réseaux">
+                </div>
+                <div class="card-back">80%</div>
+            </div>
+        </div>
+        <!-- Systèmes -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/system.png" alt="Systèmes">
+                </div>
+                <div class="card-back">85%</div>
+            </div>
+        </div>
+    </div>
 
-         <!-- C -->
-            <div class="language" data-lang="C" style="top: 45%; left: 25%;">
-                <div class="lineup"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/C.png" alt="C">
-                    </div>
-                    <div class="back">75%</div>
-                </div>
-            </div> 
-             <!-- C++ -->
-             <div class="language" data-lang="C++" style="top: 12%; left: 25%;">
-                <div class="linedown"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/C++.png" alt="C++">
-                    </div>
-                    <div class="back">75%</div>
-                </div>
-            </div> 
-             <!-- CSS -->
-             <div class="language" data-lang="CSS" style="top: 12%; left: 33%;">
-                <div class="linedown"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/css.png" alt="css">
-                    </div>
-                    <div class="back">75%</div>
-                </div>
-            </div> 
-            <!-- PHP -->
-            <div class="language" data-lang="PHP" style="top: 7%; left: 18%;">
-                <div class="linedownleft"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/php.png" alt="php">
-                    </div>
-                    <div class="back">75%</div> 
-                </div>
-            </div> 
-            <!-- Inde -->
-            <div class="language" data-lang="Inde" style="top: 67%; left: 62%;">
-                <div class="lineup"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/india.png" alt="inde">
-                    </div>
-                    <div class="back">courant</div> 
-                </div>
-            </div> 
-            <!-- France -->
-            <div class="language" data-lang="France" style="top: 12%; left: 38%;">
-                <div class="linedown"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/france.png" alt="france">
-                    </div>
-                    <div class="back">courant</div> 
-                </div>
-            </div> 
-             <!-- USA -->
-             <div class="language" data-lang="USA" style="top: 32%; left: 5%;">
-                <div class="lineleft"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/united-states.png" alt="france">
-                    </div>
-                    <div class="back">B2-C1</div> 
-                </div>
-            </div> 
-             <!-- Spanish -->
-             <div class="language" data-lang="Spanish" style="top: 73%; left: 23%;">
-                <div class="lineup"></div>
-                <div class="card">
-                    <div class="front">
-                        <img src="medias/espagne.png" alt="espagnol">
-                    </div>
-                    <div class="back">B1</div> 
-                </div>
-            </div> 
 
-     </div>
-    </section>
+    <h3 class="section-subtitle">Langues</h3>
+    <div class="skills-container">
+        <!-- Français -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/france.png" alt="Français">
+                    <span class="skill-name">Français</span>
+                </div>
+                <div class="card-back">Courant</div>
+            </div>
+        </div>
+        <!-- Anglais -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/united-states.png" alt="Anglais">
+                    <span class="skill-name">Anglais</span>
+                </div>
+                <div class="card-back">B2 - C1</div>
+            </div>
+        </div>
+        <!-- Espagnol -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/espagne.png" alt="Espagnol">
+                    <span class="skill-name">Espagnol</span>
+                </div>
+                <div class="card-back">B1</div>
+            </div>
+        </div>
+        <!-- Hindi -->
+        <div class="skill-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="medias/india.png" alt="Hindi">
+                    <span class="skill-name">Hindi</span>
+                </div>
+                <div class="card-back">Courant</div>
+            </div>
+        </div>
+    </div>
+</section>
     <!--Expériences professionnelles-->
     <section id="experience-section">
         <h2 class="section-title">Mes Expériences</h2>
@@ -227,6 +270,37 @@
             </div>
         </div>
     </section>
+
+    <section id="Projects">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Projet 1">
+                <div class="project-info">
+                    <h3>Création d’une base de données</h3>
+                    <p>Conception et création de la base de données d'une entreprise fictive d'automobile.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Projet 2">
+                <div class="project-info">
+                    <h3>Implémentation d'un besoin client</h3>
+                    <p>Développement d’une application en C pour gérer les stages du département informatique.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Projet 3">
+                <div class="project-info">
+                    <h3>Nom du Projet</h3>
+                    <p>Description brève du projet.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
 
     <!-- CONTACT -->
@@ -265,15 +339,14 @@
 
     <!-- RÉSEAUX SOCIAUX -->
     <div class="social-links">
-        <a href="https://instagram.com/"><img src="medias/insta.png" alt="Instagram"></a>
         <a href="https://gitHub.com/"><img src="medias/gitHub.png" alt="GitHub"></a>
         <a href="https://linkedin.com"><img src="medias/linkedin.png" alt="LinkedIn"></a>
     </div> 
 
     <!-- FOOTER -->
     <footer>
-        <p class="lang" data-fr="© 2024 Angia Shreya. Tous droits réservés." data-en="© 2024 Angia Shreya. All rights reserved.">
-            © 2024 Angia Shreya. Tous droits réservés.
+        <p class="lang" data-fr="© 2025 Angia Shreya. Tous droits réservés." data-en="© 2025 Angia Shreya. All rights reserved.">
+            © 2025 Angia Shreya. Tous droits réservés.
         </p>
     </footer>
 
@@ -283,7 +356,7 @@
         document.getElementById("darkModeToggle").addEventListener("click", function() {
             document.body.classList.toggle("dark-mode");
             this.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-        });
+        }); 
 
         // TRADUCTION
         document.getElementById("languageToggle").addEventListener("click", function() {
