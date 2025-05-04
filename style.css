@@ -170,6 +170,7 @@ section {
     font-size: 2.8rem;
     font-weight: 700;
     color: #6a0dad;
+    margin-top: 110px;
 }
 
 .bold {
@@ -180,8 +181,10 @@ section {
 .description {
     font-size: 1.1rem;
     margin: 20px 0;
-    max-width: 500px;
+    max-width: 600px;
 }
+
+
 
 /* ---- BOUTON CV ---- */
 .cv-button {
@@ -281,7 +284,7 @@ footer {
     background: #f6e89a;
     color: #3a2e58;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,9 +515,9 @@ button:hover {
 
 /*Experiences*/
 
-#experience-section {
+#experience {
     padding: 60px 10%;
-    text-align: center;
+    text-align: justify;
 }
 
 .section-title {
@@ -540,7 +543,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     position: relative;
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -669,9 +672,9 @@ button:hover {
 
 /* 🖼️ Image du projet */
 .project-card img {
-    width: 100%;
+    width: 65%;
     height: 180px;
-    object-fit: cover;
+    
 }
 
 /* 📄 Informations */
