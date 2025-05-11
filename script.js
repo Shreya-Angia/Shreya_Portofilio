@@ -43,5 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+    function showCategory(categoryId) {
+        document.querySelectorAll('.category').forEach(cat => cat.classList.remove('active'));
+        document.getElementById(categoryId).classList.add('active');
+
+        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+        event.target.classList.add('active');
+    }
+
+    // Affiche la première catégorie par défaut au chargement
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.category').classList.add('active');
+    });
+
+
 
 

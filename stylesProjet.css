@@ -5,7 +5,38 @@
     background-color: #f8f6fc;
 }
 
+.rectangle-box {
+    display: flex; /* Aligne l'image et le texte sur une même ligne */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 10px; /* Ajoute un espacement entre l'image et le texte */
+    margin-bottom: 10px; /* Ajoute un espacement sous le conteneur */
+}
 
+/* Alignement horizontal de l'icône, du titre et du paragraphe */
+.section-header {
+    display: flex; /* Aligne l'icône, le titre et le paragraphe sur une même ligne */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 15px; /* Ajoute un espacement entre l'icône et le texte */ 
+}
+
+
+
+.section-icon {
+    width: 40px; /* Ajuste la taille de l'icône */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+.section-header h3 {
+    margin: 0; /* Supprime les marges par défaut du titre */
+    font-size: 18px; /* Ajuste la taille du titre si nécessaire */
+    color:#6a0dad
+}
+
+.section-header p {
+    margin: 5px 0 0; /* Ajoute un léger espacement au-dessus du paragraphe */
+    font-size: 14px; /* Ajuste la taille du texte si nécessaire */
+    color: #333; /* Couleur du texte */
+}
 
 /* 🔙 Bouton Retour */
 .back-btn {
@@ -37,6 +68,12 @@
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+.rectangle-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* 📱 Responsive */

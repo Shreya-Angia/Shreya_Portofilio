@@ -31,330 +31,288 @@
             <button id="languageToggle" class="toggle-btn">🇬🇧</button>
         </div>
     </header>
-
-    <!-- ACCUEIL -->
-    <section id="accueil">
-        <div class="container">
-            <div class="text">
-                <h1 class="lang" data-fr="Je suis <span class='bold'>Shreya ANGIA</span>" data-en="My name is <span class='bold'>Shreya ANGIA</span>">
-                    Je suis <span class="bold">Shreya ANGIA</span>
-                </h1>
-                <h2> A propos de moi </h2>
-                <p class="description lang" data-fr="Je suis en première année de BUT informatique à l’Université Clermont Auvergne. Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données." 
-                   data-en="I am a first-year student in Computer Science at the University of Clermont Auvergne. Organized, persistent, and curious, I am looking for an internship in database management.">
-                    Je suis actuellement étudiante en première année de BUT informatique à l’Université Clermont Auvergne.
-                    Etant une personne organisée, persévérante et créative, je suis à la recherche d’un stage de 10 semaines en gestion de bases de données pour printemps 2026.
-                </p>
-                <a href="https://cv-shreya.my.canva.site/" download class="cv-button lang" data-fr="📄 CV à télécharger" data-en="📄 Download CV">📄 CV à télécharger</a>             
-            </div>
-            <div class="profile">
-                <img src="medias/Shreya.png" alt="Photo de profil">
-            </div>
-        </div>
-    </section>
-    <div id="dev-status">
-        <h5 class="dev-title">🚧 Site en cours de développement 🚧</h1>
-    </div> 
-    <style>
-        #dev-status {
-            text-align: center;
-            background-color: #e6b7ff;
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-    </style> 
-
     
-  <!-- QUALITÉS -->
-<section id="qualites">
-    <h2 class="section-title">Mes Qualités</h2>
-    <h5>✏️Cliquez sur les post-it pour en savoir plus !</h5>
-    <div class="qualites-container">
-        <div class="post-it" onclick="flipCard(this)">
-            <div class="front">Organisée</div>
-            <img src="medias/organiser.png" alt="Organisée">
-            <div class="back">J'aime structurer mon travail pour être efficace et ne rien oublier. Cela me permet de gérer
-                plusieurs tâches simultanément.
-            </div>
-        </div>
-        <div class="post-it" onclick="flipCard(this)">
-            <img src="medias/defi.png" alt="Persévérente">
-            <div class="front">Persévérante</div>
-            <div class="back">Je ne baisse pas les bras face aux défis, j’aime aller au bout des choses. Cela me permet de 
-                surmonter les obstacles et de trouver des solutions rapidement.
-            </div>
-        </div>
-        <div class="post-it" onclick="flipCard(this)">
-            <div class="front">Adaptabilité</div>
-            <img src="medias/adaptation.png" alt="Organisée">
-            <div class="back">Dans ma formation, j'ai souvent dû aprendre rapidement de nouveaux concepts et langages. Cela m'a permis 
-                d'acquérir une certaine flexibilité.
-            </div>
-        </div style= >
-        <div class="post-it" onclick="flipCard(this)">
-            <div class="front">Créativité</div>
-            <img src="medias/innovation.png" alt="Créativité">
-            <div class="back">J'aime trouver des idées et solutions originaux. Cela me permet de concevoir des projets de façon créative et unique.  </div>
-        </div>
-    </div>
-</section> 
-
-<!-- COMPÉTENCES -->
-<section id="competences">
-    <h2 class="section-title">Mes Compétences</h2>
-    <div class="skills-container">
-        <!-- HTML -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/html.png" alt="HTML">
-                </div>
-                <div class="card-back">85%</div>
-            </div>
-        </div>
-        <!-- Python -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/python.png" alt="Python">
-                </div>
-                <div class="card-back">45%</div>
-            </div>
-        </div>
-        <!-- SQL -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/sql.png" alt="SQL">
-                </div>
-                <div class="card-back">75%</div>
-            </div>
-        </div>
-        <!-- C -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/C.png" alt="C">
-                </div>
-                <div class="card-back">70%</div>
-            </div>
-        </div>
-        <!-- C++ -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/C++.png" alt="C++">
-                </div>
-                <div class="card-back">75%</div>
-            </div>
-        </div>
-        <!--C#-->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/C_sharp.png" alt="C#">
-                </div>
-                <div class="card-back">40%</div> 
-            </div>
-        </div>
-        <!-- CSS -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/css.png" alt="CSS">
-                </div>
-                <div class="card-back">75%</div>
-            </div>
-        </div>
-        <!-- PHP -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/php.png" alt="PHP">
-                </div>
-                <div class="card-back">23%</div>
-            </div>
-        </div>
-        <!-- Shell -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/shell.png" alt="Shell">
-                </div>
-                <div class="card-back">65%</div>
-            </div>
-        </div>
-        <!-- Arduino -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/arduino.png" alt="Arduino">
-                </div>
-                <div class="card-back">40%</div>
-            </div>
-        </div>
-        <!-- Réseaux -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/réseau.png" alt="Réseaux">
-                </div>
-                <div class="card-back">50%</div>
-            </div>
-        </div>
-        <!-- Xaml -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/xml.png" alt="Xaml">
-                </div>
-                <div class="card-back">55%</div>
-            </div>
-        </div>
-    </div>
-
-
-    <h3 class="section-subtitle">Langues</h3>
-    <div class="skills-container">
-        <!-- Français -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/france.png" alt="Français">
-                    <span class="skill-name">Français</span>
-                </div>
-                <div class="card-back">Courant</div>
-            </div>
-        </div>
-        <!-- Anglais -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/united-states.png" alt="Anglais">
-                    <span class="skill-name">Anglais</span>
-                </div>
-                <div class="card-back">B2 - C1</div>
-            </div>
-        </div>
-        <!-- Espagnol -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/espagne.png" alt="Espagnol">
-                    <span class="skill-name">Espagnol</span>
-                </div>
-                <div class="card-back">B1</div>
-            </div>
-        </div>
-        <!-- Hindi -->
-        <div class="skill-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <img src="medias/india.png" alt="Hindi">
-                    <span class="skill-name">Hindi</span>
-                </div>
-                <div class="card-back">Courant</div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--Expériences professionnelles-->
-    <section id="experience">
-        <h2 class="section-title">Mes Expériences</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2021 - 2023 </div>
-                <div class="timeline-content">
-                    <h3>ClerMUN, Hôtel de Région,Clermont-Ferrand</h3> 
-                    <p>J'ai participé à l'organisation de la <strong>conférérence internationale MUN</strong> (Model United Nations) organisée par mon établissement à l'Hôtel de Région. <br>Lors de cet événement, les élèves ont joué le rôle de délégués de différents pays et ont débattu sur des <strong> enjeux mondiaux importants</strong>. 
-                        Nous avons eu l'honneur d'avoir des invités spéciaux, dont l'ancien secrétaire adjoint de l'ONU, qui a partagé son expérience. Au cours de la conférence, j'ai <strong>rencontré et échangé avec des personnes de différents pays</strong>, comme l'Italie, la Croatie et la Roumanie.
-                        Ce fut une expérience très riche et enrichissante.<br> Cette experience m'a permit de développer mon <strong>sens de l'organsaition</strong> ainsi que mes capacités en <strong>communication</strong>.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2021</div>
-                <div class="timeline-content">
-                    <h3>Stage chez CGI, Clermont-Ferrand</h3>
-                    <p>Grâce au <strong>programme El’oweb</strong> de CGI, j’ai eu la chance d’explorer différents domaines du domaine numérique à travers une variété d’activités. 
-                        Il s’agit notamment de la conception numérique, du <strong>développement Web</strong>, de <strong>l’intelligence artificielle</strong> et plus encore. 
-                        Cette expérience m’a aidé à comprendre le large éventail d’options de carrière disponibles dans le domaine de l'informatique. 
-                        Ce stage fut déterminant et enrichissant, car c'est grâce à lui que j'ai découvert mon <strong>intérêt pour l'informatique</strong>, ce qui m'a naturellement conduit vers ma formation actuelle.
+    <main>
+        <!-- ACCUEIL -->
+        <section id="accueil">
+            <div class="container">
+                <div class="text">
+                    <h1 class="lang" data-fr="Je suis <span class='bold'>Shreya ANGIA</span>" data-en="My name is <span class='bold'>Shreya ANGIA</span>">
+                        Je suis <span class="bold">Shreya ANGIA</span>
+                    </h1>
+                    <h2> A propos de moi </h2>
+                    <p class="description lang" data-fr="Je suis en première année de BUT informatique à l’Université Clermont Auvergne. Organisée, persévérante et curieuse, je suis à la recherche d’un stage en gestion de bases de données." 
+                    data-en="I am a first-year student in Computer Science at the University of Clermont Auvergne. Organized, persistent, and curious, I am looking for an internship in database management.">
+                        Je suis actuellement étudiante en première année de BUT informatique à l’Université Clermont Auvergne.
+                        Etant une personne organisée, persévérante et créative, je suis à la recherche d’un stage de 10 semaines en gestion de bases de données pour printemps 2026.
                     </p>
+                    <a href="https://cv-shreya.my.canva.site/" download class="cv-button lang" data-fr="📄 CV à télécharger" data-en="📄 Download CV">📄 CV à télécharger</a>             
+                </div>
+                <div class="profile">
+                    <img src="medias/Shreya.png" alt="Photo de profil">
+                </div>
+            </div>
+        </section>
+        <div id="dev-status">
+            <h5 class="dev-title">🚧 Site en cours de développement 🚧</h1>
+        </div> 
+        <style>
+            #dev-status {
+                text-align: center;
+                background-color: #e6b7ff;
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+        </style> 
+
+        
+    <!-- QUALITÉS -->
+    <section id="qualites">
+        <h2 class="section-title">Mes Qualités</h2>
+        <h5>✏️Cliquez sur les post-it pour en savoir plus !</h5>
+        <div class="qualites-container">
+            <div class="post-it" onclick="flipCard(this)">
+                <div class="front">Organisée</div>
+                <img src="medias/organiser.png" alt="Organisée">
+                <div class="back">J'aime structurer mon travail pour être efficace et ne rien oublier. Cela me permet de gérer
+                    plusieurs tâches simultanément.
+                </div>
+            </div>
+            <div class="post-it" onclick="flipCard(this)">
+                <img src="medias/defi.png" alt="Persévérente">
+                <div class="front">Persévérante</div>
+                <div class="back">Je ne baisse pas les bras face aux défis, j’aime aller au bout des choses. Cela me permet de 
+                    surmonter les obstacles et de trouver des solutions rapidement.
+                </div>
+            </div>
+            <div class="post-it" onclick="flipCard(this)">
+                <div class="front">Adaptabilité</div>
+                <img src="medias/adaptation.png" alt="Organisée">
+                <div class="back">Dans ma formation, j'ai souvent dû aprendre rapidement de nouveaux concepts et langages. Cela m'a permis 
+                    d'acquérir une certaine flexibilité.
+                </div>
+            </div style= >
+            <div class="post-it" onclick="flipCard(this)">
+                <div class="front">Créativité</div>
+                <img src="medias/innovation.png" alt="Créativité">
+                <div class="back">J'aime trouver des idées et solutions originaux. Cela me permet de concevoir des projets de façon créative et unique.  </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- COMPÉTENCES -->
+    <section id="competences">
+    <h2 class="section-title">Mes Compétences</h2>
+
+    <!-- Onglets -->
+    <div class="tabs">
+        <div class="tab" onclick="showCategory('Front - end', this)">Front - end</div>
+        <div class="tab" onclick="showCategory('Back - end', this)">Back - end</div>
+        <div class="tab" onclick="showCategory('systemes', this)">Systèmes</div>
+        <div class="tab" onclick="showCategory('hardware', this)">Linguistique</div>
+    </div>
+
+    <!-- Catégorie Web -->
+    <div id="Front - end" class="category active">
+        <div class="skills-container">
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/html.png" alt="HTML">
+                    </div>
+                    <div class="card-back">85%</div>
+                </div>
+            </div>
+            <!-- CSS -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/css.png" alt="CSS">
+                    </div>
+                    <div class="card-back">75%</div>
+                </div>
+            </div>           
+            <!-- XML -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/xml.png" alt="xml">
+                    </div>
+                    <div class="card-back">65%</div>
                 </div>
             </div>
         </div>
-    </section>
+        <p class="description">En développement web je suis capable de réaliser des sites internet. Pour cela je maitrise le HTML afin de strcturer le contenu et
+            le CSS pour le design et l'esthétique. Par ailleurs, j'utilise le XML pour créer des vues d'applications.</p>
+        </p>
+    </div>
 
-    <!--PROJETS-->
-    <section id="projets">
-        <h2 class="section-title">Mes Projets</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="medias/project1.png" alt="Projet 1">
-                <div class="project-info">
-                    <h3>Création d’une base de données</h3>
-                    <p>Conception et création de la base de données d'une entreprise fictive d'automobile.</p>
-                    <a href="projet1.html" class="btn">Lire la suite</a>
+    <!-- Catégorie Systèmes -->
+    <div id="systemes" class="category">
+        <div class="skills-container">
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/python.png" alt="Python">
+                    </div>
+                    <div class="card-back">45%</div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="medias/projet2.png" alt="Projet 2">
-                <div class="project-info">
-                    <h3>Implémentation d'un besoin client</h3>
-                    <p>Développement d’une application en C pour gérer les stages du département informatique.</p>
-                    <a href="projet2.html" class="btn">Lire la suite</a>
+            <!-- Shell -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/shell.png" alt="Shell">
+                    </div>
+                    <div class="card-back">65%</div>
                 </div>
             </div>
         </div>
-    </section>
+        <p class="description">Outils et langages utilisés pour automatiser et gérer des systèmes Linux/Unix.</p>
+    </div>
 
-    
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="contact-container">
-            <div class="contact-form-container">
-                <h2 class="section-title lang" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
-                <form action="#" method="post" class="contact-form">
-                    <label for="name" class="lang" data-fr="Nom" data-en="Name">Nom</label>
-                    <input type="text" id="name" name="name" required placeholder="Votre nom">
-    
-                    <label for="email" class="lang" data-fr="Email" data-en="Email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="Votre email">
-    
-                    <label for="message" class="lang" data-fr="Message" data-en="Message">Message</label>
-                    <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
-    
-                    <button type="submit" class="lang" data-fr="Envoyer" data-en="Send">Envoyer</button>
-                </form>
+    <!-- Catégorie Hardware -->
+    <div id="hardware" class="category">
+        <div class="skills-container">
+            <!-- Arduino -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/arduino.png" alt="Arduino">
+                    </div>
+                    <div class="card-back">40%</div>
+                </div>
             </div>
-            <div class="contact-info">
-                <p class="lang" data-fr="En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant. Veuillez me contacter par les moyens 
-                ci-dessous. Merci de votre compréhension." 
-                   data-en="Due to server limitations, this option is currently unavailable. Please contact through the following means. Thank you for your understanding.">
-                   En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant. Veuillez me contacter par les moyens 
-                   ci-dessous. Merci de votre compréhension.
-                </p>
-                <p>📧 Email: <a href="mailto:shreya.angia@etu.uca.fr">shreya.angia@etu.uca.fr</a></p>
-                <p class="lang" data-fr=" 📞Téléphone: +33 6 52 32 02 84" data-en=" 📞Phone: +33 6 52 32 02 84"> 📞Téléphone: +33 6 52 32 02 84</p>
+            <!-- Réseaux -->
+            <div class="skill-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="medias/réseau.png" alt="Réseaux">
+                    </div>
+                    <div class="card-back">50%</div>
+                </div>
             </div>
         </div>
-    </section>
-    
-    
-    
+        <p class="description">Compétences en matériel embarqué et en configuration réseau.</p>
+    </div>
 
-    <!-- RÉSEAUX SOCIAUX -->
-    <div class="social-links">
-        <a href="https://gitHub.com/"><img src="medias/gitHub.png" alt="GitHub"></a>
-        <a href="https://linkedin.com"><img src="medias/linkedin.png" alt="LinkedIn"></a>
-    </div> 
 
+        <!--Expériences professionnelles-->
+        <section id="experience">
+            <h2 class="section-title">Mes Expériences</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023 </div>
+                    <div class="timeline-content">
+                        <h3>ClerMUN, Hôtel de Région,Clermont-Ferrand</h3> 
+                        <p>J'ai participé à l'organisation de la <strong>conférérence internationale MUN</strong> (Model United Nations) organisée par mon établissement à l'Hôtel de Région. <br>Lors de cet événement, les élèves ont joué le rôle de délégués de différents pays et ont débattu sur des <strong> enjeux mondiaux importants</strong>. 
+                            Nous avons eu l'honneur d'avoir des invités spéciaux, dont l'ancien secrétaire adjoint de l'ONU, qui a partagé son expérience. Au cours de la conférence, j'ai <strong>rencontré et échangé avec des personnes de différents pays</strong>, comme l'Italie, la Croatie et la Roumanie.
+                            Ce fut une expérience très riche et enrichissante.<br> Cette experience m'a permit de développer mon <strong>sens de l'organsaition</strong> ainsi que mes capacités en <strong>communication</strong>.</p>
+                        <div class = "img-container">
+                            <figure>
+                                <img id = "img Mun" src = "medias/orga.JPG" width="250">
+                                <figcaption>L'équipe</figcaption>
+                            </figure>
+                            <figure>
+                                <img id = "img MUN" src = "medias/Opening Ceremony -.JPEG" width="200" style = "margin-left: 50px;">
+                                <figcaption>Cérémonie d'ouverture</figcaption>
+                            </figure>
+                        </div>
+                            
+                        
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <h3>Stage chez CGI, Clermont-Ferrand</h3>
+                        <p>Grâce au <strong>programme El’oweb</strong> de CGI, j’ai eu la chance d’explorer différents domaines du domaine numérique à travers une variété d’activités. 
+                            Il s’agit notamment de la conception numérique, du <strong>développement Web</strong>, de <strong>l’intelligence artificielle</strong> et plus encore. 
+                            Cette expérience m’a aidé à comprendre le large éventail d’options de carrière disponibles dans le domaine de l'informatique. 
+                            Ce stage fut déterminant et enrichissant, car c'est grâce à lui que j'ai découvert mon <strong>intérêt pour l'informatique</strong>, ce qui m'a naturellement conduit vers ma formation actuelle.
+                        </p>
+                        <div class = "img-container">
+                            <figure>
+                                <img id = "img Mun" src = "medias/CGI.jpg" width="250">
+                                <figcaption>Le groupe de stage</figcaption>
+                            </figure> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PROJETS-->
+        <section id="projets">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="medias/project1.png" alt="Projet 1">
+                    <div class="project-info">
+                        <h3>Création d’une base de données</h3>
+                        <p>Conception et création de la base de données d'une entreprise fictive d'automobile.</p>
+                        <a href="projet1.html" class="btn">Lire la suite</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="medias/projet2.png" alt="Projet 2">
+                    <div class="project-info">
+                        <h3>Implémentation d'un besoin client</h3>
+                        <p>Développement d’une application en C pour gérer les stages du département informatique.</p>
+                        <a href="projet2.html" class="btn">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <h2 class="section-title lang" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
+                    <form action="#" method="post" class="contact-form">
+                        <label for="name" class="lang" data-fr="Nom" data-en="Name">Nom</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+        
+                        <label for="email" class="lang" data-fr="Email" data-en="Email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Votre email">
+        
+                        <label for="message" class="lang" data-fr="Message" data-en="Message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea>
+        
+                        <button type="submit" class="lang" data-fr="Envoyer" data-en="Send">Envoyer</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <p class="lang" data-fr="En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant. Veuillez me contacter par les moyens 
+                    ci-dessous. Merci de votre compréhension." 
+                    data-en="Due to server limitations, this option is currently unavailable. Please contact through the following means. Thank you for your understanding.">
+                    En raison d'un manque de serveur, cette option n'est pas disponible pour l'instant. Veuillez me contacter par le moyen 
+                    ci-dessous. Merci de votre compréhension.
+                    </p>
+                    <p>📧 Email: <a href="mailto:shreya.angia@etu.uca.fr">shreya.angia@etu.uca.fr</a></p>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+
+        <!-- RÉSEAUX SOCIAUX -->
+        <div class="social-links">
+            <a href="https://gitHub.com/"><img src="medias/gitHub.png" alt="GitHub"></a>
+            <a href="https://linkedin.com"><img src="medias/linkedin.png" alt="LinkedIn"></a>
+        </div> 
+    </main>
     <!-- FOOTER -->
     <footer>
         <p class="lang" data-fr="© 2025 Angia Shreya. Tous droits réservés." data-en="© 2025 Angia Shreya. All rights reserved.">
