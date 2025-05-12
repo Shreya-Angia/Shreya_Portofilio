@@ -190,6 +190,34 @@ section {
     text-align: left;  
 }
 
+.illustration {
+    margin-bottom: 30px; /* Ajoute un espace entre les images et le bouton */
+    display: flex; /* Aligne les images sur une ligne */
+    justify-content: left; /* Centre les images horizontalement */
+    gap: 20px; /* Augmente l'espacement entre les images */
+} 
+
+.illustration img {
+    width: 40px; /* Réduit légèrement la taille des images */
+    height: auto; /* Conserve les proportions des images */
+    margin: 0 10px; /* Ajoute un espacement autour des images */
+    
+}
+
+.github-icon {
+    width: 60px; /* Ajuste la taille de l'image GitHub */
+    height: auto; /* Conserve les proportions */
+}
+
+.illustration a {
+    display: inline-block; /* Assure que les images restent alignées */
+    transition: transform 0.3s ease-in-out; /* Ajoute un effet au survol */
+}
+
+.illustration a:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
 
 
 /* ---- BOUTON CV ---- */
@@ -476,6 +504,14 @@ footer {
     font-style: italic;
     color: #444;
     margin-top: 20px;
+}
+
+#Linguistique .skills-container .card-front img {
+    margin: 10px; /* Ajoute un espacement autour des images */
+    display: block; /* Assure que les images ne débordent pas */
+    max-width: 100%; /* Empêche les images de dépasser leur conteneur */
+    height: auto; /* Conserve les proportions des images */
+    margin-top: 20px; /* Ajoute un espacement au-dessus des images */
 }
 
 
