@@ -297,24 +297,42 @@ footer {
 
 /*---- FORMATION ----*/
 
-.school-content {
+/* .school-content {
     display: flex;
     align-items: center;
     gap: 24px;
     padding: 100px 50px;
     background-color: white;
     border-radius: 15px;  
+} */
+
+.school-content {
+    background: #f8f4ff;
+    border-radius: 12px;
+    padding: 60px 50px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
-.school-content img {
-    flex-shrink: 0;
-    border-radius: 7px;
+.school-title {
+    margin-bottom: 14px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #6c3483;
+}
+
+.school-flex {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.school-flex img {
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    flex-shrink: 0;
     width: 20em; 
-}
-
-.school-text {
-    flex: 1
+    
 }
 
 /* ---- QUALITÉS ---- */
@@ -324,6 +342,10 @@ footer {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 30px;
+}
+
+.school-text {
+    flex: 1;
 }
 
 
