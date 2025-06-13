@@ -819,8 +819,6 @@ figure {
 
 /*SECTION PROJET*/
 
-
-
 /* 🎨 Titre avec séparation stylisée */
 .section-title {
     font-size: 28px;
@@ -904,6 +902,91 @@ figure {
     background: #8354c5;
 }
 
+
+/* ---- MODE SOMBRE ---- */
+
+/* Mode sombre général */
+body.dark-mode {
+    background: #18122B;
+    color: #fff;
+}
+
+/* Titres et textes en blanc */
+body.dark-mode,
+body.dark-mode .section-header h3,
+body.dark-mode .description,
+body.dark-mode .img-container figcaption {
+    color: #fff;
+}
+
+/*Formation*/
+
+body.dark-mode .school-content {
+    background: #2a1b3d;
+    color: #ddbcf5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Compétences*/
+
+body.dark-mode .tab {
+    background: #2a1b3d;
+    color: #ddbcf5;
+    border: 2px solid #6c3483;
+    } 
+
+body.dark-mode .tab.active {
+    background: #6c3483;
+    color: #fff;
+}
+
+body.dark-mode .card-front {
+    background: #ddbcf5;
+    color: #ddbcf5;
+}
+
+/*Experience*/
+
+body.dark-mode .timeline-content{
+    background: #2a1b3d;
+    color: #ddbcf5; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+body.dark_mode .timeline-content p {
+    color: #ddbcf5;  
+}   
+
+/* Projets */
+body.dark-mode .project-card {
+    background: #ddbcf5;
+    color: #ddbcf5; 
+    border: 2px solid #6c3483;
+    box-shadow: 0px 4px 10px rgba(106, 13, 173, 0.1);
+}
+
+/* Pour les inputs ou autres éléments blancs */
+body.dark-mode input,
+body.dark-mode textarea {
+    background: #ddbcf5;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Lien actif ou hover */
+body.dark-mode .button:hover,
+body.dark-mode .btn:hover,
+body.dark-mode button:hover {
+    background: #6c3483 !important;
+    color: #fff !important;
+}
+
+/* Figcaption*/
+body.dark-mode .img-container figcaption {
+    color: #fff;
+}
+
 /* 📱 Responsive */
 @media (max-width: 768px) {
     .projects-container {
@@ -911,3 +994,5 @@ figure {
         align-items: center;
     }
 }
+
+
