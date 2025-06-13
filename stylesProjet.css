@@ -1,50 +1,59 @@
 /* 🌟 Page Projet */
 #ProjectDetail {
-    padding: 60px 10%;
+    padding: 6vh 10vw;
     text-align: left;
     background-color: #f8f6fc;
 }
 
-.rectangle-box {
-    display: flex; /* Aligne l'image et le texte sur une même ligne */
-    align-items: center; /* Centre verticalement l'image et le texte */
-    gap: 10px; /* Ajoute un espacement entre l'image et le texte */
-    margin-bottom: 10px; /* Ajoute un espacement sous le conteneur */
+/* 📦 Boîte avec contours */
+.rectangle-box {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(106, 13, 173, 0.1);
+    width: 80%;
+    max-width: 700px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Alignement horizontal de l'icône, du titre et du paragraphe */
 .section-header {
-    display: flex; /* Aligne l'icône, le titre et le paragraphe sur une même ligne */
-    align-items: flex-start; /* Aligne les éléments en haut */
-    gap: 15px; /* Ajoute un espacement entre l'icône et le texte */ 
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5vw;
+    margin-bottom: 1.5vh;
 }
 
-
-
 .section-icon {
-    width: 40px; /* Ajuste la taille de l'icône */
-    height: auto; /* Conserve les proportions de l'image */
+    width: clamp(30px, 4vw, 40px);
+    height: auto;
 }
 
 .section-header h3 {
-    margin: 0; /* Supprime les marges par défaut du titre */
-    font-size: 18px; /* Ajuste la taille du titre si nécessaire */
-    color:#6a0dad
+    margin: 0;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    color: #6a0dad;
 }
 
 .section-header p {
-    margin: 5px 0 0; /* Ajoute un léger espacement au-dessus du paragraphe */
-    font-size: 14px; /* Ajuste la taille du texte si nécessaire */
-    color: #333; /* Couleur du texte */
+    margin: 0.5vh 0 0;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: #333;
 }
 
 /* 🔙 Bouton Retour */
 .back-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem;
     background: #6a0dad;
     color: white;
-    font-size: 16px;
+    font-size: clamp(0.9rem, 1.6vw, 1.1rem);
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -56,41 +65,30 @@
     background: #8354c5;
 }
 
-/* 📦 Boîte avec contours */
-.rectangle-box {
-    margin-top: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(106, 13, 173, 0.1);
-    width: 90%;
-    max-width: 700px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.rectangle-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* 🖼️ Conteneur d'images */
 .img-container {
     display: flex;
-    gap: 24px;
+    gap: 2vw;
     justify-content: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    margin-top: 2vh;
 }
 
 .img-container figure {
     margin: 0;
-    text-align: center; 
+    text-align: center;
+    max-width: 100%;
 }
 
-/* 📱 Responsive */
-@media (max-width: 768px) {
-    .rectangle-box {
-        width: 90%;
-    }
+.img-container img {
+    width: clamp(120px, 20vw, 300px);
+    height: auto; 
+    border-radius: 8px;
+}
+
+/* ✅ Design fluide sans media queries */
+    .img-container figcaption { 
+    margin-top: 0.5vh;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: #555;
 }
